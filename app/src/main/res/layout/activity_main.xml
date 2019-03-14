@@ -4,58 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_weight="">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/titulo_entrada"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/n_entry"
-            android:id="@+id/entran"
-            />
-        <Button
-            android:id="@+id/btn_entrada"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_height="274dp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/btn_anadir" />
+            android:text="@string/titulo_entrada"
+            android:textSize="50dp"
+
+            />
+
+        <TextView
+            android:textSize="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="274dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/titulo_salida" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/entran"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/n_entry"
+            android:textSize="100dp" />
+
+        <TextView
+            android:id="@+id/salen"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/n_salen"
+            android:textSize="100dp" />
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        >
-        <TextView
+        android:layout_weight="8">
+
+        <Button
+            android:id="@+id/btn_entrada"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/titulo_salida"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/n_salen"
-            android:id="@+id/salen"
-            />
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/btn_anadir"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light"/>
+
         <Button
             android:id="@+id/btn_salida"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_anadir"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
             android:gravity="center"
-            />
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/background_light"
+            android:text="@string/btn_anadir" />
     </LinearLayout>
 </LinearLayout>
