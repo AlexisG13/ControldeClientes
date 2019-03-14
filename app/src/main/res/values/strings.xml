@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Control deClientes</string>
+    <string name="btn_anadir">ADD</string>
+    <string name="n_entry">0</string>
+    <string name="n_salen">0</string>
+    <string name="titulo_entrada">Entran</string>
+    <string name="titulo_salida">Salen</string>
+</resources>
